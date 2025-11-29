@@ -3,78 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Wichita Tree Service | Removal, Trimming & Stump Grinding</title>
-  <meta name="description" content="24/7 Emergency Tree Service in Wichita, KS. Free estimates. Fully insured. Tree removal, trimming, stump grinding. Call (316) 555-TREE now!" />
+  <title>Wichita Tree Service | 24/7 Emergency Tree Removal</title>
+  <meta name="description" content="Wichita's #1 tree service. Emergency removal, trimming, stump grinding. Call (316) 555-TREE" />
   
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { sans: ['Inter', 'system-ui'] },
-          colors: { green: '#22543d', lime: '#84cc16' }
-        }
-      }
-    }
-  </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+  <style>body{font-family:'Inter',sans-serif;}</style>
 </head>
+<body class="min-h-screen flex flex-col">
 
-<body class="font-sans text-gray-800">
-
-  <!-- Hero -->
-  <section class="bg-gradient-to-br from-green-900 to-black text-white">
-    <div class="container mx-auto px-6 py-20 text-center">
-      <h1 class="text-5xl md:text-6xl font-bold mb-6">
-        Wichita Tree Service<br><span class="text-lime-400">You Can Trust</span>
-      </h1>
-      <p class="text-2xl mb-8">Tree Removal • Trimming • Stump Grinding • Emergency 24/7</p>
-      <div class="space-x-4">
-        <a href="tel:3165558733" class="inline-block bg-lime-500 hover:bg-lime-400 text-black font-bold text-xl px-10 py-5 rounded-lg shadow-lg transform hover:scale-105 transition">
-          📞 Call (316) 555-TREE
-        </a>
-        <a href="#contact" class="inline-block bg-white text-green-900 font-bold text-xl px-10 py-5 rounded-lg hover:bg-gray-100 transition">
-          Free Estimate
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Sneak Peek -->
-  <section class="py-20 bg-gray-50">
+  <section class="hero-gradient text-white py-32 text-center">
     <div class="container mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
-      <div class="grid md:grid-cols-3 gap-10">
-        <div class="bg-white p-8 rounded-xl shadow-lg text-center">
-          <h3 class="text-2xl font-bold text-green-800 mb-4">Tree Removal</h3>
-          <p>Safe removal of dangerous, dead, or unwanted trees – even in tight spaces.</p>
-        </div>
-        <div class="bg-white p-8 rounded-xl shadow-lg text-center">
-          <h3 class="text-2xl font-bold text-green-800 mb-4">Tree Trimming & Pruning</h3>
-          <p>ISA-certified pruning for health, safety, and beauty.</p>
-        </div>
-        <div class="bg-white p-8 rounded-xl shadow-lg text-center">
-          <h3 class="text-2xl font-bold text-green-800 mb-4">Stump Grinding</h3>
-          <p>Complete stump removal below ground level. No eyesores left.</p>
-        </div>
+      <h1 class="text-6xl md:text-8xl font-black mb-4">WICHITA<br><span class="text-[#84cc16]">TREE SERVICE</span></h1>
+      <p class="text-2xl mb-10">24/7 Emergency • Free Estimates • Fully Insured</p>
+      <div class="space-x-6">
+        <a href="tel:3165558733" class="btn-primary font-black text-2xl px-12 py-6 rounded-lg">📞 (316) 555-TREE</a>
+        <a href="/contact.html" class="border-2 border-[#84cc16] text-[#84cc16] font-bold text-2xl px-12 py-6 rounded-lg hover:bg-[#84cc16] hover:text-black transition">Free Quote</a>
       </div>
     </div>
   </section>
 
-  <!-- CTA Bottom -->
-  <section class="bg-green-800 text-white py-16">
+  <section class="py-20">
     <div class="container mx-auto px-6 text-center">
-      <h2 class="text-4xl font-bold mb-6">Need Tree Work in Wichita Today?</h2>
-      <p class="text-xl mb-8">Same-day emergency service available • Licensed & Insured</p>
-      <a href="tel:3165558733" class="bg-lime-500 hover:bg-lime-400 text-black font-bold text-2xl px-12 py-6 rounded-lg inline-block">
-        Call Now: (316) 555-TREE
-      </a>
+      <h2 class="text-5xl font-black mb-16">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+        <div class="card p-10 rounded-2xl"><h3 class="text-3xl font-bold mb-4">Tree Removal</h3><p>Dead or dangerous trees gone fast & safe</p></div>
+        <div class="card p-10 rounded-2xl"><h3 class="text-3xl font-bold mb-4">Trimming & Pruning</h3><p>ISA-certified, beautiful results</p></div>
+        <div class="card p-10 rounded-2xl"><h3 class="text-3xl font-bold mb-4">Stump Grinding</h3><p>Below-grade removal, no trace left</p></div>
+      </div>
+      <a href="/services.html" class="inline-block mt-12 text-[#84cc16] font-bold text-xl hover:underline">All Services →</a>
     </div>
   </section>
 
-  <footer class="bg-black text-white py-10 text-center">
-    <p>© 2025 Wichita Tree Service • Serving Wichita & Surrounding Areas • (316) 555-TREE</p>
+  <section class="bg-[#166534] py-20 text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl font-black mb-8 text-white">Need Tree Work Today?</h2>
+      <a href="tel:3165558733" class="btn-primary text-3xl font-black px-16 py-8 rounded-lg">(316) 555-TREE – Same-Day Available</a>
+    </div>
+  </section>
+
+  <footer class="py-12 text-center text-gray-500">
+    © 2025 Wichita Tree Service • Serving Wichita & All Surrounding Areas • (316) 555-TREE
   </footer>
 </body>
 </html>
