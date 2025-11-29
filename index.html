@@ -3,147 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Wichita Tree Service | 24/7 Tree Removal & Trimming</title>
-  <meta name="description" content="Emergency tree service in Wichita, KS. Same-day removal, trimming, stump grinding. Call (316) 555-TREE" />
+  <title>Wichita Tree Service | 24/7 Emergency Removal</title>
+  <meta name="description" content="Same-day tree removal, trimming, stump grinding in Wichita. Call (316) 555-TREE – we answer in minutes." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #000;
-      color: #84cc16;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Inter',sans-serif;background:#000;color:#84cc16;min-height:100vh;display:flex;flex-direction:column;}
+    .container{max-width:1200px;margin:0 auto;padding:0 1.5rem;}
+    
+    /* HERO */
+    .hero{background:linear-gradient(135deg,#000,#166534);padding:8rem 0 6rem;text-align:center;}
+    h1{font-size:5.5rem;font-weight:900;line-height:0.9;text-transform:uppercase;}
+    @media(min-width:768px){h1{font-size:8.5rem;}}
+    
+    /* BUTTONS */
+    .btn{display:inline-block;background:#84cc16;color:#000;font-weight:900;font-size:1.9rem;padding:1.3rem 3.5rem;border-radius:0.75rem;text-decoration:none;margin:0.8rem;transition:all .3s;}
+    .btn:hover{background:#a3e635;transform:scale(1.08);}
+    .btn-outline{background:transparent;border:3px solid #84cc16;color:#84cc16;}
+    .btn-outline:hover{background:#84cc16;color:#000;}
+    
+    /* SECTIONS */
+    section{padding:6rem 0;text-align:center;}
+    .services{background:#000;}
+    .contact{background:#000;border-top:4px solid #84cc16;}
+    .cta{background:#166534;}
+    
+    /* GRID */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2.5rem;max-width:1000px;margin:3rem auto;}
+    .card{background:#111;border:2px solid #84cc16;padding:3rem 2rem;border-radius:1rem;transition:transform .4s;}
+    .card:hover{transform:translateY(-20px);}
+    
+    /* FORM */
+    input,textarea,select{
+      width:100%;background:#111;border:3px solid #84cc16;color:#84cc16;padding:1.4rem 1.6rem;
+      border-radius:0.75rem;font-size:1.2rem;margin-bottom:1.5rem;font-family:inherit;
     }
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
-
-    /* HERO – pure toxic green on black */
-    .hero {
-      background: linear-gradient(135deg, #000, #166534);
-      padding: 6rem 0;
-      text-align: center;
-    }
-    h1 {
-      font-size: 5rem;
-      font-weight: 900;
-      line-height: 1;
-      margin-bottom: 1rem;
-      text-transform: uppercase;
-    }
-    @media (min-width: 768px) { h1 { font-size: 7rem; } }
-    .lime { color: #84cc16; }
-
-    .btn {
-      display: inline-block;
-      background: #84cc16;
-      color: #000;
-      font-weight: 900;
-      font-size: 1.8rem;
-      padding: 1.2rem 3rem;
-      border-radius: 0.75rem;
-      text-decoration: none;
-      margin: 1rem;
-      transition: all 0.3s ease;
-    }
-    .btn:hover {
-      background: #a3e635;
-      transform: scale(1.08);
-    }
-    .btn-outline {
-      background: transparent;
-      border: 3px solid #84cc16;
-      color: #84cc16;
-    }
-    .btn-outline:hover {
-      background: #84cc16;
-      color: #000;
-    }
-
-    /* SERVICES */
-    .services {
-      padding: 6rem 0;
-      text-align: center;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin: 3rem auto;
-      max-width: 1000px;
-    }
-    .card {
-      background: #111;
-      border: 2px solid #84cc16;
-      padding: 3rem 2rem;
-      border-radius: 1rem;
-      transition: transform 0.3s;
-    }
-    .card:hover { transform: translateY(-15px); }
-    .card h3 { font-size: 2rem; margin-bottom: 1rem; }
-
-    /* CTA */
-    .cta {
-      background: #166534;
-      padding: 6rem 0;
-      text-align: center;
-    }
-
-    /* FOOTER */
-    footer {
-      background: #000;
-      color: #555;
-      text-align: center;
-      padding: 2rem 0;
-      font-size: 0.9rem;
-    }
+    input::placeholder,textarea::placeholder{color:#444;}
+    textarea{min-height:180px;resize:vertical;}
+    .submit-btn{width:100%;background:#84cc16;color:#000;font-weight:900;font-size:2.2rem;padding:1.6rem;
+      border:none;border-radius:0.75rem;cursor:pointer;transition:all .3s;text-transform:uppercase;}
+    .submit-btn:hover{background:#a3e635;transform:scale(1.04);}
+    
+    footer{background: #000;color:#444;padding:2.5rem 0;font-size:0.95rem;text-align:center;margin-top:auto;}
   </style>
 </head>
 <body>
 
+  <!-- HERO -->
   <section class="hero">
     <div class="container">
-      <h1>Wichita<br><span class="lime">Tree Service</span></h1>
-      <p style="font-size:1.8rem; margin:2rem 0;">24/7 Emergency • Free Estimates • Fully Insured</p>
+      <h1>Wichita<br><span style="color:#84cc16;">Tree Service</span></h1>
+      <p style="font-size:2.2rem;margin:2rem 0;">24/7 Emergency • Free Estimates • Fully Insured</p>
       <div>
         <a href="tel:3165558733" class="btn">Call (316) 555-TREE</a>
-        <a href="/contact.html" class="btn btn-outline">Free Quote</a>
+        <a href="#contact" class="btn btn-outline">Get Free Quote</a>
       </div>
     </div>
   </section>
 
+  <!-- SERVICES -->
   <section class="services">
     <div class="container">
-      <h2 style="font-size:4rem; font-weight:900; margin-bottom:3rem;">Our Services</h2>
+      <h2 style="font-size:4.5rem;font-weight:900;margin-bottom:3rem;">Our Services</h2>
       <div class="grid">
-        <div class="card">
-          <h3>Tree Removal</h3>
-          <p>Safe, fast, clean</p>
-        </div>
-        <div class="card">
-          <h3>Trimming & Pruning</h3>
-          <p>ISA-certified work</p>
-        </div>
-        <div class="card">
-          <h3>Stump Grinding</h3>
-          <p>Below grade, gone forever</p>
-        </div>
+        <div class="card"><h3 style="font-size:2rem;">Tree Removal</h3><p>Safe, fast, clean</p></div>
+        <div class="card"><h3 style="font-size:2rem;">Trimming & Pruning</h3><p>ISA-certified</p></div>
+        <div class="card"><h3 style="font-size:2rem;">Stump Grinding</h3><p>Gone forever</p></div>
       </div>
-      <a href="/services.html" style="color:#84cc16; font-size:1.4rem; font-weight:bold;">All Services →</a>
     </div>
   </section>
 
+  <!-- CONTACT FORM -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 style="font-size:4.5rem;font-weight:900;margin-bottom:1rem;">Get Your Free Quote</h2>
+      <p style="font-size:1.6rem;color:#aaa;margin-bottom:3rem;">
+        We answer <span style="color:#84cc16;font-weight:900;">15 minutes or less</span> — 24/7
+      </p>
+
+      <form action="https://formspree.io/f/xbljwlya" method="POST" style="max-width:800px;margin:0 auto;">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="tel" name="phone" placeholder="Phone Number (required)" required />
+        <input type="email" name="email" placeholder="Email (optional)" />
+        <select name="service" required>
+          <option value="" disabled selected>Service Needed</option>
+          <option>Emergency Removal</option>
+          <option>Trimming / Pruning</option>
+          <option>Stump Grinding</option>
+          <option>Storm Damage</option>
+          <option>Other</option>
+        </select>
+        <textarea name="message" placeholder="Address, tree size, urgency — tell us everything..." required></textarea>
+        <button type="submit" class="submit-btn">SEND — WE'LL CALL YOU IN 15 MIN</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
   <section class="cta">
     <div class="container">
-      <h2 style="font-size:4rem; font-weight:900; margin-bottom:2rem; color:#fff;">Need Help Today?</h2>
-      <a href="tel:3165558733" class="btn" style="font-size:2.5rem; padding:1.5rem 4rem;">
-        (316) 555-TREE – Same-Day Available
+      <h2 style="font-size:4.5rem;font-weight:900;color:#fff;">Need it Gone TODAY?</h2>
+      <a href="tel:3165558733" class="btn" style="font-size:2.8rem;padding:1.8rem 5rem;margin-top:2rem;">
+        (316) 555-TREE – CALL NOW
       </a>
     </div>
   </section>
 
   <footer>
-    © 2025 Wichita Tree Service • Serving Wichita, Derby, Andover, Maize & Surrounding Areas
+    © 2025 Wichita Tree Service • (316) 555-TREE • Wichita, Derby, Andover, Maize & surrounding areas
   </footer>
 
 </body>
