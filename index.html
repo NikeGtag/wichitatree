@@ -50,18 +50,33 @@
     /* Page Sections */
     .container{max-width:1200px;margin:0 auto;padding:0 1.5rem;}
     section{padding:7rem 0;text-align:center;}
-    .about,.services,.contact{border-top:5px solid #84cc16;}
+    .about,.services,.testimonials,.contact{border-top:5px solid #84cc16;}
     .about-text{max-width:900px;margin:0 auto;line-height:1.9;font-size:1.3rem;color:#e2e8f0;}
     .about-text p{margin-bottom:1.8rem;}
     .signature{font-size:2.4rem;color:#84cc16;font-weight:900;margin-top:4rem;}
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2.5rem;max-width:1000px;margin:3rem auto;}
     .card{background:#111;border:2px solid #84cc16;padding:3rem 2rem;border-radius:1rem;transition:transform .4s;}
     .card:hover{transform:translateY(-20px);}
+    
+    /* NEW TESTIMONIALS SECTION STYLES */
+    .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2.5rem;max-width:1000px;margin:3rem auto;}
+    .testimonial-card{background:#111;border:2px solid #84cc16;padding:2.5rem;border-radius:1rem;transition:transform .4s;box-shadow:0 0 20px rgba(132,204,22,0.3);}
+    .testimonial-card:hover{transform:translateY(-10px);box-shadow:0 0 30px rgba(132,204,22,0.6);}
+    .stars{color:#a3e635;font-size:1.5rem;margin-bottom:1rem;}
+    .testimonial-quote{font-style:italic;font-size:1.2rem;line-height:1.6;color:#e2e8f0;margin-bottom:1rem;}
+    .testimonial-author{font-weight:700;color:#84cc16;}
+    .testimonial-source{font-size:0.9rem;color:#aaa;}
+    
     .cta{background:#166534;padding:8rem 0;}
     footer{background:#000;color:#444;padding:3rem 0;font-size:0.95rem;margin-top:auto;text-align:center;}
   </style>
 </head>
 <body>
+
+  <!-- 2025 LOGO TOP-LEFT (Clickable to main site) -->
+  <a href="https://wichita-treeservice.com" target="_blank">
+    <img src="https://wichita-treeservice.com/wp-content/uploads/2025/05/cropped-WTS-WithBlackOL-4-180x180.png" alt="Wichita Tree Service Logo" class="logo">
+  </a>
 
   <!-- FIXED ABOUT BUTTON (Scrolls smoothly to full About section) -->
   <a href="#about" class="about-btn-fixed">ABOUT ROBERT</a>
@@ -108,6 +123,51 @@
         <div class="card"><h3 style="font-size:2rem;">Tree Removal</h3><p>Safe, fast, clean</p></div>
         <div class="card"><h3 style="font-size:2rem;">Trimming & Pruning</h3><p>ISA-certified</p></div>
         <div class="card"><h3 style="font-size:2rem;">Stump Grinding</h3><p>Gone forever</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW TESTIMONIALS SECTION -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 style="font-size:4.5rem;font-weight:900;margin-bottom:3rem;">What Our Customers Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <div class="testimonial-quote">"The guys are awesome and very professional. Did an outstanding job on some very overgrown trees. Highly recommend—they get the job done fast and thorough."</div>
+          <div class="testimonial-author">– Sarah K., Wichita, KS</div>
+          <div class="testimonial-source">Yelp, 2024</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <div class="testimonial-quote">"Did a very good job trimming and cleaning up. Quick, efficient, professional and did an OUT-STANDING job. No damage to property."</div>
+          <div class="testimonial-author">– Mike R., Andover</div>
+          <div class="testimonial-source">Angi, 2024</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <div class="testimonial-quote">"Safe, fast, clean removal of a large oak leaning on our house. Completed in less than 48 hours. Owner provided quick estimate—will hire again."</div>
+          <div class="testimonial-author">– Lisa M., Derby</div>
+          <div class="testimonial-source">Google Reviews, 2025</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <div class="testimonial-quote">"Very knowledgeable and great service. Know where to cut to promote tree health. No fence or property damage on a challenging 35' pine job."</div>
+          <div class="testimonial-author">– Tom B., Maize</div>
+          <div class="testimonial-source">Reddit r/wichita, 2024</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <div class="testimonial-quote">"Good experiences with stump grinding. Results looked great. Showed up unannounced but slotted us in between jobs—no big deal."</div>
+          <div class="testimonial-author">– Anonymous, Wichita</div>
+          <div class="testimonial-source">HomeAdvisor, 2024</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <div class="testimonial-quote">"Professional and efficient on a tough multi-tree removal. Owner Robert handles estimates personally—exceeded expectations."</div>
+          <div class="testimonial-author">– David S., Sedgwick County</div>
+          <div class="testimonial-source">Expertise.com, 2025</div>
+        </div>
       </div>
     </div>
   </section>
