@@ -24,7 +24,7 @@
     .logo:hover{transform:scale(1.08);}
     @media(max-width:768px){.logo{width:70px;height:70px;top:15px;left:15px;}}
 
-    /* FIXED ABOUT BUTTON TOP-RIGHT – Reinforced for no breaks */
+    /* FIXED ABOUT BUTTON TOP-RIGHT – Fully reinforced */
     .about-btn-fixed{
       position:fixed;top:20px;right:20px;background:#84cc16;color:#000;font-weight:900;
       font-size:1.1rem;padding:0.9rem 1.6rem;border-radius:50px;text-decoration:none;
@@ -68,7 +68,7 @@
     <img src="https://wichita-treeservice.com/wp-content/uploads/2025/05/cropped-WTS-WithBlackOL-4-180x180.png" alt="Wichita Tree Service Logo" class="logo">
   </a>
 
-  <!-- FIXED ABOUT BUTTON (Reinforced – scrolls smoothly to #about) -->
+  <!-- FIXED ABOUT BUTTON (Scrolls smoothly to full About section) -->
   <a href="#about" class="about-btn-fixed">ABOUT ROBERT</a>
 
   <!-- AUTO-SLIDING HERO HEADER -->
@@ -84,16 +84,16 @@
     </div>
   </header>
 
-  <!-- UPDATED ABOUT US (Fresh with 2025 stats) -->
+  <!-- FULL ABOUT US SECTION – Complete from live site (May 2025 update) -->
   <section class="about" id="about">
     <div class="container">
       <h2 style="font-size:4.8rem;font-weight:900;margin-bottom:2rem;">About Us</h2>
       <div class="about-text">
-        <p>You found us by searching for "tree service in Wichita, KS," and you've come to the right place. Before you give Griselda or Claudia a call to schedule a free estimate, take a moment to learn a little about me and my company.</p>
+        <p>You found us by searching for “tree service in Wichita, KS,” and you've come to the right place. Before you give Griselda or Claudia a call to schedule a free estimate, take a moment to learn a little about me and my company.</p>
         <p>My name is <strong>Robert Phillips</strong>, the proud owner of Wichita Tree Service. I established this business back in 2012 when I was a financially struggling college student right here in Wichita. Offering tree removal, stump grinding, tree pruning, and trimming services to the local area, I created this website, which quickly gained traction. Before I knew it, Wichita Tree Service was born almost overnight. I enlisted the help of some friends, acquired a small stump grinder from the Home Depot rental department, and got to work cutting trees.</p>
         <p>At that time, my only equipment consisted of a beat-up F-150 truck I purchased from a salvage auction and a boat trailer I found at a garage sale. After fixing up the truck and adding some boards to the boat trailer, my journey began. Facing considerable competition in town, I knew I needed to differentiate myself. From then on, I made a firm decision to do things differently—to do things the right way. No cutting corners, no spiking trees, topping, or lions tailing trees. I adhered to all A.N.S.I. and I.S.A. standards, obtained the necessary insurance, and ensured we wore proper personal protective equipment. The plan was simple: to maintain a higher level of professionalism than our competitors and hope that people would take notice.</p>
         <p>I modeled my business after larger tree services that prioritized ethical practices, believing it to be the key to their success. I dedicated myself to educating both my customers and myself about the detrimental effects of topping, spiking, and lion tailing trees. I focused on becoming a certified arborist, immersing myself in books, audiobooks, and extensive research to expand my knowledge. Eventually, I took the arborist exam and passed it on my first attempt.</p>
-        <p>Today, I can proudly say that my plan worked. Through countless weeks of working over 100 hours, through the literal blood, sweat, and tears shed by me and my team, we achieved continuous growth of 100% year after year. I hired more employees and invested in new equipment. Now, we stand as the largest tree service provider in Wichita, leading in terms of the number of employees, equipment inventory, and annual revenue—with <strong>24 employees, 24 trucks, 8,120 customers served, and 17,622 quotes given</strong>. I am now Wichita's only Board Certified Master Arborist (MW-5884B). Our goal is to have more arborists and master arborists than any company in Kansas in the coming years.</p>
+        <p>Today, I can proudly say that my plan worked. Through countless weeks of working over 100 hours, through the literal blood, sweat, and tears shed by me and my team, we achieved continuous growth of 100% year after year. I hired more employees and invested in new equipment. Now, we stand as the largest tree service provider in Wichita, leading in terms of the number of employees, equipment inventory, and annual revenue—with <strong>24 employees, 24 trucks, 8,120 customers served, and 17,622 quotes given</strong> as of May 2025. I am now Wichita's only Board Certified Master Arborist (MW-5884B). Our goal is to have more arborists and master arborists than any company in Kansas in the coming years.</p>
         <p>Throughout this journey, I have gained invaluable knowledge and experiences. Initially, I believed that simply doing things the right way was the key to success, but I soon realized that it requires unwavering dedication and hard work. Most importantly, it necessitates the support of people who believe in you and what you do. Our company wouldn't be where it is today without the incredible individuals who have helped us along the way—our loyal early customers who kept returning, investing their hard-earned money because they believed in us, as well as the employees and friends who have supported us throughout. I am forever grateful to all of them.</p>
         <div class="signature">
           – Robert Phillips<br>
@@ -152,6 +152,11 @@
     slides.forEach(s => {
       const img = new Image();
       img.src = s.style.backgroundImage.slice(5, -2);
+    });
+    // Smooth scroll for About button
+    document.querySelector('.about-btn-fixed').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementById('about').scrollIntoView({behavior: 'smooth'});
     });
   </script>
 
